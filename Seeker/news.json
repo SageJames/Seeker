@@ -1,0 +1,90 @@
+[
+	{
+    	"id": 1001, 
+        "title": "Covid-19 & Fantasy football",
+        "category" : "US",
+        "imageName": "three",
+        "link": "https://www.cnn.com/2020/12/05/us/fantasy-football-coronavirus-challenges-trnd/index.html",
+		"bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    },
+	{
+    	"id": 1002,
+        "title": "Covid-19 testing capacity strained",
+        "category" : "US",
+        "imageName": "four",
+        "link": "https://www.nbcnews.com/news/us-news/covid-19-testing-capacity-strained-surge-demand-n1249592",
+		"bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    	
+    },
+	{
+    	"id": 1003,
+        "title": "India's vaccination drive against Covid",
+        "category" : "World",
+        "imageName": "five",
+         "link": "https://www.bbc.co.uk/programmes/w3ct1c16",
+         "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    
+	},
+	{
+    	"id": 1004,
+        "title": "Covid-19 in the UK",
+        "category" : "World",
+        "imageName": "ten",
+        "link": "https://www.bbc.com/news/uk-51768274",
+        "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    
+        
+	},
+	{
+    	"id": 1005,
+        "title": "Earlier Coronavirus Helped Asia Fight Covid-19?",
+        "category" : "World",
+        "imageName": "two",
+        "link": "https://www.wsj.com/articles/scientists-investigate-whether-exposure-to-earlier-coronavirus-helped-asia-fight-covid-19-11607166230",
+		"bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."	
+    },
+	{
+    	"id": 1006,
+        "title": "Rick Pitino tweets Iona's game is canceled due to Covid",
+        "category" : "US",
+        "imageName": "eight",
+        "link": "https://www.usatoday.com/story/sports/ncaab/2020/12/03/college-basketball-covid-19-coronavirus-updates/3809569001/",
+        "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    
+	},
+	{
+    	"id": 1007,
+        "title": "Russia starts COVID-19 vaccinations",
+        "category" : "World",
+        "imageName": "nine",
+        "link": "https://www.upi.com/Top_News/World-News/2020/12/05/Russia-starts-COVID-19-vaccinations-among-high-risk/5381607184316/",    
+        "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    
+	},
+	{
+    	"id": 1008,
+        "title": "New Mexico shut down nearly everything",
+        "category" : "US",
+        "imageName": "six",
+        "link": "https://www.washingtonpost.com/national/new-mexico-hospitals-covid-crisis/2020/12/04/3d06e2d2-3675-11eb-b59c-adb7153d10c2_story.html",
+        "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+	},
+	{
+    	"id": 1009,
+        "title": "Covid is coming back to Brazil",
+        "category": "World",
+        "imageName": "one",
+        "link": "https://www.washingtonpost.com/world/the_americas/brazil-coronavirus-rio-return/2020/12/05/33511bfe-35d0-11eb-8d38-6aea1adb3839_story.html",
+		"bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    
+    },
+	{
+    	"id": 1010,
+        "title": "North Carolina sets new COVID-19 metrics records", 
+        "category" : "US",
+        "imageName": "seven",
+        "link": "https://www.wcnc.com/video/news/health/coronavirus/coronavirus-numbers/coronavirus-metrics-north-carolina-south-carolina/275-d37700c7-3250-4ffc-a13d-223b31df517a",
+        "bio": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        
+	}
+]

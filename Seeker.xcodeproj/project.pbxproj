@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010E26B5257DCB2200DF50BE /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010E26B4257DCB2200DF50BE /* itemCell.swift */; };
+		013BA14D257DB361009EBE0C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013BA14C257DB361009EBE0C /* Data.swift */; };
+		013BA150257DB3E4009EBE0C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013BA14F257DB3E4009EBE0C /* News.swift */; };
 		0143BE78257D48EE0099260A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143BE77257D48EE0099260A /* AddViewController.swift */; };
+		0144258C257DAAEC000956F5 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 0144258B257DAAEC000956F5 /* news.json */; };
 		01A357CB257CC51000D10BF3 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A357CA257CC51000D10BF3 /* LogViewController.swift */; };
 		01A357CF257CC53100D10BF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A357CE257CC53100D10BF3 /* HomeViewController.swift */; };
 		01E55289257CB87800E9E06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E55288257CB87800E9E06C /* AppDelegate.swift */; };
@@ -23,7 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010E26B4257DCB2200DF50BE /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		013BA14C257DB361009EBE0C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		013BA14F257DB3E4009EBE0C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		0143BE77257D48EE0099260A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0144258B257DAAEC000956F5 /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		01A357CA257CC51000D10BF3 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		01A357CE257CC53100D10BF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		01E55285257CB87800E9E06C /* Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,14 +82,18 @@
 				01E5528A257CB87800E9E06C /* SceneDelegate.swift */,
 				01E5528C257CB87800E9E06C /* ViewController.swift */,
 				01A357CE257CC53100D10BF3 /* HomeViewController.swift */,
+				010E26B4257DCB2200DF50BE /* itemCell.swift */,
 				01A357CA257CC51000D10BF3 /* LogViewController.swift */,
 				01F87D86257D70B10024B10B /* Mask3 1.mlmodel */,
 				01E5528E257CB87800E9E06C /* Main.storyboard */,
+				013BA14C257DB361009EBE0C /* Data.swift */,
+				013BA14F257DB3E4009EBE0C /* News.swift */,
 				0143BE77257D48EE0099260A /* AddViewController.swift */,
 				01E55294257CB87900E9E06C /* Assets.xcassets */,
 				01E55296257CB87900E9E06C /* LaunchScreen.storyboard */,
 				01F87D8C257D70D50024B10B /* mask.jpg */,
 				01F87D89257D70CC0024B10B /* no.jpg */,
+				0144258B257DAAEC000956F5 /* news.json */,
 				01E55299257CB87900E9E06C /* Info.plist */,
 				01E55291257CB87800E9E06C /* Seeker.xcdatamodeld */,
 			);
@@ -145,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0144258C257DAAEC000956F5 /* news.json in Resources */,
 				01E55298257CB87900E9E06C /* LaunchScreen.storyboard in Resources */,
 				01F87D8D257D70D50024B10B /* mask.jpg in Resources */,
 				01E55295257CB87900E9E06C /* Assets.xcassets in Resources */,
@@ -161,9 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E5528D257CB87800E9E06C /* ViewController.swift in Sources */,
+				013BA14D257DB361009EBE0C /* Data.swift in Sources */,
 				01E55289257CB87800E9E06C /* AppDelegate.swift in Sources */,
 				0143BE78257D48EE0099260A /* AddViewController.swift in Sources */,
 				01A357CB257CC51000D10BF3 /* LogViewController.swift in Sources */,
+				010E26B5257DCB2200DF50BE /* itemCell.swift in Sources */,
+				013BA150257DB3E4009EBE0C /* News.swift in Sources */,
 				01E55293257CB87800E9E06C /* Seeker.xcdatamodeld in Sources */,
 				01E5528B257CB87800E9E06C /* SceneDelegate.swift in Sources */,
 				01A357CF257CC53100D10BF3 /* HomeViewController.swift in Sources */,

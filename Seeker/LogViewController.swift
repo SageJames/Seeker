@@ -61,8 +61,6 @@ class LogViewController: UIViewController {
                             let total = "\(String((dictionary["total"] as? Int)!))"
                             let increase  = "\(String((dictionary["positiveIncrease"] as? Int)!))"
                             let hash  = "\(dictionary["hash"]!)"
-                
-                            print(dictionary["hash"]!)
                             //Setting the values
                             DispatchQueue.main.async {
                                 self.dateLabel.text = fullDate
