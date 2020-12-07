@@ -9,9 +9,9 @@ import UIKit
 
 class itemCell: UICollectionViewCell {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var source: UILabel!
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var label: UILabel!
+    @IBOutlet var source: UILabel!
     
 }
 

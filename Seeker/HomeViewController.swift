@@ -27,6 +27,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! itemCell
             
+
+            
             cell.imageView =
                 UIImageView(image: UIImage(named:  newsData[indexPath.row].imageName))
             cell.label.text = newsData[indexPath.row].title
