@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010E26B5257DCB2200DF50BE /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010E26B4257DCB2200DF50BE /* itemCell.swift */; };
 		013BA14D257DB361009EBE0C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013BA14C257DB361009EBE0C /* Data.swift */; };
 		013BA150257DB3E4009EBE0C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013BA14F257DB3E4009EBE0C /* News.swift */; };
 		0143BE78257D48EE0099260A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143BE77257D48EE0099260A /* AddViewController.swift */; };
@@ -27,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		010E26B4257DCB2200DF50BE /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
 		013BA14C257DB361009EBE0C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		013BA14F257DB3E4009EBE0C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		0143BE77257D48EE0099260A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				01E5528A257CB87800E9E06C /* SceneDelegate.swift */,
 				01E5528C257CB87800E9E06C /* ViewController.swift */,
 				01A357CE257CC53100D10BF3 /* HomeViewController.swift */,
-				010E26B4257DCB2200DF50BE /* itemCell.swift */,
 				01A357CA257CC51000D10BF3 /* LogViewController.swift */,
 				01F87D86257D70B10024B10B /* Mask3 1.mlmodel */,
 				01E5528E257CB87800E9E06C /* Main.storyboard */,
@@ -178,7 +175,6 @@
 				01E55289257CB87800E9E06C /* AppDelegate.swift in Sources */,
 				0143BE78257D48EE0099260A /* AddViewController.swift in Sources */,
 				01A357CB257CC51000D10BF3 /* LogViewController.swift in Sources */,
-				010E26B5257DCB2200DF50BE /* itemCell.swift in Sources */,
 				013BA150257DB3E4009EBE0C /* News.swift in Sources */,
 				01E55293257CB87800E9E06C /* Seeker.xcdatamodeld in Sources */,
 				01E5528B257CB87800E9E06C /* SceneDelegate.swift in Sources */,

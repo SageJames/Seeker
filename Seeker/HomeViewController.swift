@@ -7,35 +7,55 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+class HomeViewController: UIViewController, UITableViewDataSource, UITabBarDelegate, UITableViewDelegate{
+ 
+    @IBOutlet weak var table: UITableView!
     
-    @IBOutlet  var collectionView: UICollectionView!
+
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        table.delegate = self
+        table.dataSource = self
         
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsData.count
     }
     
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! itemCell
-            
-
-            
-            cell.imageView =
-                UIImageView(image: UIImage(named:  newsData[indexPath.row].imageName))
-            cell.label.text = newsData[indexPath.row].title
-            cell.source.text = newsData[indexPath.row].link
-            print(newsData[indexPath.row].imageName)
-            return cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID")
+        cell?.textLabel?.text =
+            newsData[indexPath.row].title
+        return cell!
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedItem = "\(newsData[indexPath.row].link)"
+        let alert = UIAlertController(title: "Opening", message: "\(selectedItem)", preferredStyle: .alert)
+        let canelAction = UIAlertAction(title: "cancel", style: .default, handler: {action -> Void in
+                   //diss
+               })
+        alert.addAction(canelAction)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: {action -> Void in
+            UIApplication.shared.open(URL.init(string: newsData[indexPath.row].link)!, options: [:], completionHandler: nil)
+            
+        })
+               alert.addAction(okAction)
+               self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
+            
+     //       cell.imageView =
+    //         UIImageView(image: UIImage(named:  newsData[indexPath.row].imageName))
+         //   cell.label.text = newsData
+           // print(newsData[indexPath.row].imageName)
+      //      return cell
+    //}
 }
 
 
