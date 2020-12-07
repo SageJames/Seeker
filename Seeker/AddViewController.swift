@@ -10,12 +10,13 @@ import CoreML
 import Vision
 
 
-class AddViewController: UIViewController{
+
+class AddViewController: UIViewController, UINavigationControllerDelegate{
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labelDescription: UILabel!
     
-    override func viewDidLoad() {
+   override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
         let imagePath = Bundle.main.path(forResource: "mask", ofType: "jpg")
@@ -41,7 +42,9 @@ class AddViewController: UIViewController{
                     }
                 }
 
-                labelDescription.text = "They are \(bestGuess) with confidence \(bestConfidence) out of 1"
+                labelDescription.text = "They are with \(bestGuess). Confidence \(bestConfidence) out of 1"
             }
 
 }
+
+    

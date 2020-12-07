@@ -281,20 +281,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pa3-p7-Fj8">
-                                <rect key="frame" x="13" y="64" width="388" height="617"/>
+                                <rect key="frame" x="13" y="226" width="388" height="393"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZi-mp-yqg">
-                                <rect key="frame" x="70" y="592" width="274" height="158"/>
+                                <rect key="frame" x="29" y="636" width="274" height="158"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="158" id="Y0d-bn-G2m"/>
+                                    <constraint firstAttribute="height" constant="158" id="M8g-9A-XC7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa5-dz-Ffl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa5-dz-Ffl">
                                 <rect key="frame" x="104" y="88" width="206" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="5eJ-a6-VPV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -303,13 +305,14 @@
                         <viewLayoutGuide key="safeArea" id="6JK-o2-bAg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pa3-p7-Fj8" firstAttribute="centerX" secondItem="OZi-mp-yqg" secondAttribute="centerX" id="7fo-xF-Bm0"/>
-                            <constraint firstItem="OZi-mp-yqg" firstAttribute="leading" secondItem="6JK-o2-bAg" secondAttribute="leading" constant="70" id="ScF-hH-Azt"/>
-                            <constraint firstItem="pa3-p7-Fj8" firstAttribute="leading" secondItem="6JK-o2-bAg" secondAttribute="leading" constant="13" id="bZh-BN-t51"/>
-                            <constraint firstItem="6JK-o2-bAg" firstAttribute="bottom" secondItem="OZi-mp-yqg" secondAttribute="bottom" constant="63" id="bhR-4P-mJs"/>
-                            <constraint firstItem="OZi-mp-yqg" firstAttribute="top" secondItem="pa3-p7-Fj8" secondAttribute="bottom" constant="-89" id="cQG-mq-zKv"/>
-                            <constraint firstItem="pa3-p7-Fj8" firstAttribute="centerX" secondItem="4bQ-6Q-aDh" secondAttribute="centerX" id="gwi-M3-TmR"/>
-                            <constraint firstItem="pa3-p7-Fj8" firstAttribute="top" secondItem="6JK-o2-bAg" secondAttribute="top" constant="20" id="h2d-2L-qs0"/>
+                            <constraint firstItem="OZi-mp-yqg" firstAttribute="leading" secondItem="6JK-o2-bAg" secondAttribute="leading" constant="29" id="4ak-X0-gHs"/>
+                            <constraint firstItem="pa3-p7-Fj8" firstAttribute="top" secondItem="Fa5-dz-Ffl" secondAttribute="bottom" constant="84" id="9OD-48-aRM"/>
+                            <constraint firstItem="Fa5-dz-Ffl" firstAttribute="centerX" secondItem="pa3-p7-Fj8" secondAttribute="centerX" id="GeA-TX-ylF"/>
+                            <constraint firstItem="Fa5-dz-Ffl" firstAttribute="top" secondItem="6JK-o2-bAg" secondAttribute="top" constant="44" id="LKw-No-FCV"/>
+                            <constraint firstItem="pa3-p7-Fj8" firstAttribute="leading" secondItem="6JK-o2-bAg" secondAttribute="leading" constant="13" id="PwX-ae-rRY"/>
+                            <constraint firstItem="Fa5-dz-Ffl" firstAttribute="centerX" secondItem="4bQ-6Q-aDh" secondAttribute="centerX" id="b9p-jc-4Ba"/>
+                            <constraint firstItem="6JK-o2-bAg" firstAttribute="trailing" secondItem="OZi-mp-yqg" secondAttribute="trailing" constant="111" id="gNe-0j-DvX"/>
+                            <constraint firstItem="OZi-mp-yqg" firstAttribute="top" secondItem="pa3-p7-Fj8" secondAttribute="bottom" constant="17" id="wVR-qe-4fq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="plus" catalog="system" id="yF5-k3-BiW"/>
