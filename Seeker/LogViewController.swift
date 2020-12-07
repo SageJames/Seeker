@@ -19,13 +19,7 @@ class LogViewController: UIViewController {
     @IBOutlet weak var increasedRateLabel: UILabel!
     @IBOutlet weak var hashLabel: UILabel!
     
-    var dueDate = "Unknown"
-    var dueState = "Unknown"
-    var duePos = "Unknown"
-    var dueTot = "Unknown"
-    var dueTCL = "Unknown"
-    var dueInc = "Unknown"
-    var dueHash = "Unknown"
+
     
     
     
@@ -33,7 +27,7 @@ class LogViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        DispatchQueue.main.async {
+        
             let task = self.session.dataTask(with: self.url, completionHandler: { [self] data, response, error in
                    if error != nil {
                        self.handleClientError(error: error!)
@@ -55,21 +49,29 @@ class LogViewController: UIViewController {
                   if let covidDataArray = json as? [Any] {
                       let object = covidDataArray[0]
                           if let dictionary = object as? [String: Any] {
-                              let num = dictionary["positive"] as? Int
                               let dat = dictionary["date"] as? Int
                               let arrayDat = Array(String(dat!))
                               let month = "\(arrayDat[4])" + "\(arrayDat[5])"
                               let day = "\(arrayDat[6])" + "\(arrayDat[7])"
                               let year = "\(arrayDat[0])"+"\(arrayDat[1])"+"\(arrayDat[2])"+"\(arrayDat[3])"
                               let fullDate = "\(month)" + "\\" + "\(day)" + "\\" + "\(year)"
-                            let state = "\(String(describing: dictionary["state"]))"
-                            let pos =  "\(String(describing: num))"
-                            let deaths = "\(String(describing: dictionary["death"]))"
-                            let total = "\(String(describing: dictionary["total"]))"
-                            let increase  = "\(String(describing: dictionary["positiveIncrease"]))"
-                            let hash  = "\(String(describing: dictionary["hash"]))"
+                            let state = "\(dictionary["state"]!)"
+                            let pos =  "\(String((dictionary["positive"] as? Int)!))"
+                            //let deaths = "\(String(describing: dictionary["death"]))"
+                            let total = "\(String((dictionary["total"] as? Int)!))"
+                            let increase  = "\(String((dictionary["positiveIncrease"] as? Int)!))"
+                            let hash  = "\(dictionary["hash"]!)"
                 
+                            print(dictionary["hash"]!)
                             //Setting the values
+                            DispatchQueue.main.async {
+                                self.dateLabel.text = fullDate
+                                self.stateLabel.text = state
+                                self.positiveCaseLabel.text = pos
+                                self.totalCaseLabel.text = total
+                                self.increasedRateLabel.text = increase
+                                self.hashLabel.text = hash
+                            }
                         
                           
                           }    }
@@ -79,13 +81,17 @@ class LogViewController: UIViewController {
               }
             
             })
+            
             task.resume()
+            
             while (self.covidData == nil) {
                 usleep(500)
             }
-        }
+        
 
+        
     }
+   
         
         func handleServerError(response: URLResponse) {
             print(response)
